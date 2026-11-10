@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of an aspiring web developer.">
+  <title>Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a class="brand" href="#home">Developer Portfolio.</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">BSIT Student & Developer</span>
+        <h1>Hello, I'm June Andrei Tabafunda</h1>
+        <p class="hero-copy">Welcome to my developer portfolio. I am an aspiring web developer who enjoys learning how websites and applications are designed, built, and improved. I am excited to develop useful digital experiences and grow my skills through real projects.</p>
+        <a class="button" href="#projects">View Projects</a>
+        <a class="button secondary" href="#contact">Get in Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Selected Work</h2>
+          <p>Recent projects built focusing on UI design, database integration, and component functionality.</p>
+        </div>
+        <div class="grid-3">
+          <article class="panel">
+            <div class="card-header">
+              <span class="tag">Website</span>
+            </div>
+            <h3 class="card-title">Grainy Delights</h3>
+            <p class="card-desc">A basic Website for a bakery.</p>
+          </article>
+          <article class="panel">
+            <div class="card-header">
+              <span class="tag">Power Apps</span>
+            </div>
+            <h3 class="card-title">Pizza Ordering App</h3>
+            <p class="card-desc">Simple Pizza Ordering App.</p>
+          </article>
+          <article class="panel">
+            <div class="card-header">
+              <span class="tag">Power Apps</span>
+            </div>
+            <h3 class="card-title">NU Reserve</h3>
+            <p class="card-desc">Facilty Reserviton system and database.</p>
+          </article>
+        </div>
+         <article class="panel">
+            <div class="card-header">
+              <span class="tag">App</span>
+            </div>
+            <h3 class="card-title">library system</h3>
+            <p class="card-desc">Basic library system.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Technical Toolkit</h2>
+        </div>
+        <div class="panel">
+          <ul class="skill-list">
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>SQL Server & Database Design</li>
+            <li>Microsoft Power Apps</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Background</h2>
+        </div>
+        <div class="panel">
+          <table aria-label="Education History">
+            <thead>
+              <tr>
+                <th>Focus Area</th>
+                <th>Degree Program</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Web Development, DB Management & Mobile Apps</td>
+                <td>Bachelor of Science in Information Technology</td>
+                <td>In Progress</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <div class="section-heading">
+            <h2>Let's Connect</h2>
+            <p>Currently open to new projects, collaborations, and opportunities in web development.</p>
+          </div>
+          <p style="color: var(--muted); margin-top: 24px;">
+            Reach out directly at <br>
+            <a href="mailto:hello@example.com" style="color: var(--text); font-weight: 500; border-bottom: 1px solid var(--border); padding-bottom: 2px;">hello@example.com</a>
+          </p>
+        </div>
+        <div class="panel">
+          <form id="contact-form">
+            <div>
+              <label for="visitor-name">Name</label>
+              <input id="visitor-name" name="name" type="text" placeholder="Jane Doe" required>
+            </div>
+            <div>
+              <label for="visitor-email">Email</label>
+              <input id="visitor-email" name="email" type="email" placeholder="jane@example.com" required>
+            </div>
+            <div>
+              <label for="visitor-message">Message</label>
+              <textarea id="visitor-message" name="message" placeholder="How can we work together?" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+            <p id="form-status" style="font-size: 0.85rem; color: var(--muted); margin: 0;" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Developer Portfolio.</span>
+      <span>Built with focus and precision.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
